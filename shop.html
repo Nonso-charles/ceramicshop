@@ -2,25 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <style>
         .shop {
             background: #fff;
+            transition: margin-top 0.3s ease-in-out;
         }
 
         .shop-container {
@@ -45,9 +46,17 @@
             border-bottom: 1px solid #a9a9a9;
         }
 
+        .nav-links.active~.shop {
+            margin-bottom: 12.5rem;
+        }
+
         @media (max-width: 768px) {
             .shop-container {
                 width: 90%;
+            }
+
+            .shop.active {
+                margin-top: 10.5rem;
             }
 
             .shop h1 {
@@ -85,7 +94,6 @@
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-badge">0</span>
             </div>
-
         </div>
     </header>
 
@@ -94,13 +102,15 @@
             <h1>Shop</h1>
             <div class="shop-headers">
                 <p>Showing all 11 results</p>
-                <p class="sorting">Default Sorting <i class="fas fa-chevron-down"></i></p>
+                <p class="sorting">
+                    Default Sorting <i class="fas fa-chevron-down"></i>
+                </p>
             </div>
         </div>
 
         <div class="items-container">
             <div class="item">
-                <img src="ceramic-cup-01-300x300.jpg" alt="">
+                <img src="ceramic-cup-01-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -123,7 +133,7 @@
             </div>
 
             <div class="item">
-                <img src="ceramic-planter-01-300x300.jpg" alt="">
+                <img src="ceramic-planter-01-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -145,7 +155,7 @@
             </div>
 
             <div class="item">
-                <img src="product-01-300x300.jpg" alt="">
+                <img src="product-01-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -167,7 +177,7 @@
             </div>
 
             <div class="item">
-                <img src="product-02-300x300.jpg" alt="">
+                <img src="product-02-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -189,7 +199,7 @@
             </div>
 
             <div class="item">
-                <img src="product-07-300x300.jpg" alt="">
+                <img src="product-07-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -211,7 +221,7 @@
             </div>
 
             <div class="item">
-                <img src="contact-01-300x300 (1).jpg" alt="">
+                <img src="contact-01-300x300 (1).jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -233,7 +243,7 @@
             </div>
 
             <div class="item">
-                <img src="product-05-300x300.jpg" alt="">
+                <img src="product-05-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -254,7 +264,7 @@
             </div>
 
             <div class="item">
-                <img src="product-06-300x300.jpg" alt="">
+                <img src="product-06-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -276,7 +286,7 @@
             </div>
 
             <div class="item">
-                <img src="product-08-300x300.jpg" alt="">
+                <img src="product-08-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -298,7 +308,7 @@
             </div>
 
             <div class="item">
-                <img src="product-03-300x300.jpg" alt="">
+                <img src="product-03-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -320,7 +330,7 @@
             </div>
 
             <div class="item">
-                <img src="product-09-300x300.jpg" alt="">
+                <img src="product-09-300x300.jpg" alt="" />
 
                 <div class="sales-icon-container">
                     <span class="sales-tag">Sale!</span>
@@ -379,6 +389,22 @@
         <span class="chevron"></span>
     </button>
 
+    <script src="script.js"></script>
+
+    <script>
+        document
+            .querySelector(".menu-btn")
+            .addEventListener("click", function () {
+                const navLinks = document.querySelector(".nav-links");
+                const menuBtn = document.querySelector(".menu-btn");
+                const hero = document.querySelector(".hero");
+                const shopSection = document.querySelector(".shop");
+
+                navLinks.classList.toggle("active");
+                menuBtn.classList.toggle("active");
+                shopSection.classList.toggle("active");
+            });
+    </script>
 </body>
 
 </html>

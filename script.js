@@ -1,9 +1,17 @@
 document.querySelector(".menu-btn").addEventListener("click", function () {
   const navLinks = document.querySelector(".nav-links");
   const menuBtn = document.querySelector(".menu-btn");
+  const hero = document.querySelector(".hero");
 
   navLinks.classList.toggle("active");
   menuBtn.classList.toggle("active");
+
+  // Add or remove padding-top class based on menu state
+  if (navLinks.classList.contains("active")) {
+    hero.classList.add("padding-top");
+  } else {
+    hero.classList.remove("padding-top");
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
