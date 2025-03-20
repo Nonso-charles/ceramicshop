@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .shop {
+            background: #fff;
+        }
+
+        .shop-container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .shop-headers {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .shop-headers p {
+            margin: 3rem 0;
+        }
+
+        .shop h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #025048;
+            padding-top: 4rem;
+            border-bottom: 1px solid #a9a9a9;
+        }
+
+        @media (max-width: 768px) {
+            .shop-container {
+                width: 90%;
+            }
+
+            .shop h1 {
+                font-size: 1.82rem;
+                padding-bottom: 1rem;
+            }
+
+            .sorting {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">CeramicShop</h1>
+            <nav>
+                <div class="menu-btn">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">0</span>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="shop">
+        <div class="shop-container">
+            <h1>Shop</h1>
+            <div class="shop-headers">
+                <p>Showing all 11 results</p>
+                <p class="sorting">Default Sorting <i class="fas fa-chevron-down"></i></p>
+            </div>
+        </div>
+
+        <div class="items-container">
+            <div class="item">
+                <img src="ceramic-cup-01-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+
+                <span class="item-category">Ceramic</span>
+                <h2 class="item-description">Ceramic Cup</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦237000</p>
+                    <p class="discounted-price">₦189000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="ceramic-planter-01-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Pottery</span>
+                <h2 class="item-description">Ceramic Planter</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦349000</p>
+                    <p class="discounted-price">₦299000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="product-01-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Ceramic</span>
+                <h2 class="item-description">Ceramic Plate</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦179000</p>
+                    <p class="discounted-price">₦119000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="product-02-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Ceramic</span>
+                <h2 class="item-description">Ceramic Plate & Bowls</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦249000</p>
+                    <p class="discounted-price">₦209000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="product-07-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Ceramic</span>
+                <h2 class="item-description">Ceramic Plates & Spoons</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦349000</p>
+                    <p class="discounted-price">₦299000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="contact-01-300x300 (1).jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Pottery</span>
+                <h2 class="item-description">Ceramic Vases & Planter</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦247000</p>
+                    <p class="discounted-price">₦217000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="product-05-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Pottery</span>
+                <h2 class="item-description">Ceramic Plant Pots</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="discounted-price">₦217000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="product-06-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Pottery</span>
+                <h2 class="item-description">Ceramic Pastel Plates</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦239000</p>
+                    <p class="discounted-price">₦209000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="product-08-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Pottery</span>
+                <h2 class="item-description">Ceramic Garden Pots</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦179000</p>
+                    <p class="discounted-price">₦159000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="product-03-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Pottery</span>
+                <h2 class="item-description">Ceramic Drink Coaster</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="slashed-price">₦157000</p>
+                    <p class="discounted-price">₦99000</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="product-09-300x300.jpg" alt="">
+
+                <div class="sales-icon-container">
+                    <span class="sales-tag">Sale!</span>
+                    <span class="shop-icon"><i class="fas fa-shopping-cart"></i></span>
+                </div>
+                <span class="item-category">Pottery</span>
+                <h2 class="item-description">Ceramic Bottles</h2>
+                <div class="star-ratings">
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <div class="prices">
+                    <p class="discounted-price">₦249000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>CeramicShop</h1>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="shop.html">SHOP</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+
+            <div class="footer-socials">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-tiktok"></i>
+            </div>
+        </div>
+
+        <div class="copyright-container">
+            <div class="copyright">
+                <p>Copyright © 2025</p>
+            </div>
+            <div class="rights">
+                <p>All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to Top">
+        <span class="chevron"></span>
+    </button>
+
+</body>
+
+</html>

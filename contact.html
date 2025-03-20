@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .contact-hero {
+      color: #fff;
+      padding-top: 3rem;
+    }
+
+    .contact-hero-container {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-hero-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .contact-hero-image img {
+      width: 100%;
+      height: auto;
+      margin-bottom: -3rem;
+    }
+
+    .contact-hero-text {
+      margin-top: 11rem;
+    }
+
+    .contact-hero-text h1 {
+      font-size: 4.125rem;
+      line-height: 1.1em;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .contact-hero-text p {
+      font-size: 1.2rem;
+      line-height: 1.5em;
+      margin-bottom: 3rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: #fff;
+      padding-top: 7rem;
+      padding-bottom: 3rem;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-information {
+      flex: 1;
+    }
+
+    .contact-information h2 {
+      font-size: 3rem;
+      line-height: 1.2em;
+      font-weight: 500;
+      color: #025048;
+    }
+
+    .contact-subtext {
+      font-size: 1rem;
+      margin: 1.2rem 0;
+      color: #424b4a;
+    }
+
+    .info-title {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5em;
+      letter-spacing: 1.5px;
+      color: #025048;
+      margin-top: 1rem;
+    }
+
+    .info-title span {
+      margin-right: 1rem;
+    }
+
+    .info {
+      font-size: 1rem;
+      color: #424b4a;
+      margin: .5rem 0;
+      border-bottom: 1px solid #a9a9a9;
+    }
+
+    .contact-socials {
+      margin-top: 1rem;
+    }
+
+    .contact-socials i {
+      margin-right: 0.5rem;
+      color: #025048;
+    }
+
+    .contact-socials P {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5em;
+      letter-spacing: 1.5px;
+      color: #025048;
+      margin-bottom: 1rem;
+    }
+
+    .contact-socials i:hover {
+      transform: scale(1.1);
+    }
+
+    .form-container {
+      background: #f1f4f1;
+      padding: 1.2rem;
+      border-radius: 0.5rem;
+      flex: 1;
+    }
+
+    label {
+      font-size: 1rem;
+      color: #424b4a;
+      font-weight: 700;
+      display: block;
+      margin: 1rem 0;
+    }
+
+    .required {
+      color: red;
+    }
+
+    .name-fields {
+      display: flex;
+      gap: 0.625rem;
+    }
+
+    .name-fields input {
+      flex: 1;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.625rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+      font-size: 0.875rem;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    button {
+      padding: 0.938rem 1.875rem;
+      background: transparent;
+      color: #025048;
+      border: 1px solid #025048;
+      margin-top: 1rem;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 50px 20px;
+      background-color: #f5f5f5;
+    }
+
+    .faq-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .faq-left {
+      flex: 1;
+    }
+
+    .faq-left h2 {
+      font-size: 60px;
+      font-weight: normal;
+      color: #2a5d5b;
+      margin-bottom: 20px;
+    }
+
+    .faq-left p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+      max-width: 400px;
+    }
+
+    .faq-right {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: normal;
+      color: #2a5d5b;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      color: #1a3c3a;
+    }
+
+    .faq-question .arrow-down {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question .arrow-down::before,
+    .faq-question .arrow-down::after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 2px;
+      background-color: #2a5d5b;
+      top: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question .arrow-down::before {
+      left: 0;
+      transform: rotate(-45deg);
+    }
+
+    .faq-question .arrow-down::after {
+      right: 0;
+      transform: rotate(45deg);
+    }
+
+    .faq-question.active .arrow-down::before {
+      transform: rotate(45deg);
+    }
+
+    .faq-question.active .arrow-down::after {
+      transform: rotate(-45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 20px;
+    }
+
+    .faq-answer.active {
+      max-height: 600px;
+      padding: 20px;
+    }
+
+    .faq-answer p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .contact-hero-text {
+        margin-top: 3rem;
+      }
+
+      .contact-hero-text h1 {
+        font-size: 2.5rem;
+        color: #fff;
+      }
+
+      .contact-hero-container {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        gap: 1rem;
+      }
+
+      .contact-container {
+        flex-direction: column;
+        width: 90%;
+      }
+
+      .contact-information h2 {
+        font-size: 1.875rem;
+      }
+
+      .contact-subtext {
+        font-size: 0.91rem;
+      }
+
+      .info-title {
+        font-size: 0.794rem;
+      }
+
+      .info {
+        font-size: 0.906rem;
+      }
+
+      button {
+        font-size: 0.906rem;
+      }
+
+      .faq-section {
+        padding: 1.875rem 0.625rem;
+      }
+
+      .faq-container {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+
+      .faq-text h2 {
+        font-size: 2.5rem;
+      }
+
+      .faq-text p {
+        font-size: 0.875rem;
+      }
+
+      .faq-item-container {
+        padding: 0.9rem;
+      }
+
+      .faq-question {
+        font-size: 1rem;
+        padding: 0.9rem;
+      }
+
+      .faq-answer p {
+        font-size: 0.875rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CeramicShop</h1>
+      <nav>
+        <div class="menu-btn">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-badge">0</span>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="contact-hero">
+    <div class="contact-hero-container">
+      <div class="contact-hero-text">
+        <h1>Contact Us</h1>
+        <p>We're here to assist you in any way we can. Whether you have questions about our products, need personalised
+          recommendations, or simply want to connect with our team, don't hesitate to reach out.</p>
+      </div>
+
+      <div class="contact-hero-image">
+        <img src="contact-01-300x300 (1).jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-container">
+      <div class="contact-information">
+        <h2>Get in touch</h2>
+        <p class="contact-subtext">Share some details here. This is Flexible section where you can share anything you
+          want. It could be details or some information.</p>
+        <p class="info-title"><span><i class="fas fa-location"></i></span> ADDRESS</p>
+        <p class="info">Festac Town Lagos</p>
+
+        <p class="info-title"><span><i class="fas fa-phone"></i></span> PHONE</p>
+        <p class="info">+234 987645678</p>
+
+        <p class="info-title"><span><i class="fas fa-envelope"></i></span> EMAIL</p>
+        <p class="info">info@ceramicshop.com</p>
+
+        <div class="contact-socials">
+          <p>FOLLOW</p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-tiktok"></i>
+          <i class="fab fa-pinterest"></i>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form>
+          <label for="name">Name <span class="required">*</span></label>
+          <div class="name-fields">
+            <input type="text" placeholder="First" id="firstNameInput" required>
+            <input type="text" placeholder="Last" id="lastNameInput" required>
+          </div>
+
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" placeholder="Email" id="emailInput">
+
+          <label for="message">Comment or Message</label>
+          <textarea name="" id="messageInput"></textarea>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="faq-container">
+      <div class="faq-left">
+        <h2>FAQs</h2>
+        <p>Find answers to common questions about our ceramic products, ordering, shipping, care, and more. If you need
+          further information, feel free to contact our support team.</p>
+      </div>
+      <div class="faq-right">
+        <div class="faq-item">
+          <button class="faq-question">Ordering and Shipping <span class="arrow-down"></span></button>
+          <div class="faq-answer">
+            <p>We process orders within 1-2 business days. Once your order is shipped, you’ll receive a tracking number
+              via email. Standard shipping typically takes 3-5 business days within the U.S., while international
+              shipping may take 7-14 business days, depending on your location. Shipping costs are calculated at
+              checkout based on your address and order weight.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Product Care and Maintenance <span class="arrow-down"></span></button>
+          <div class="faq-answer">
+            <p>Our ceramic products are durable but require proper care. Hand-wash your items with mild soap and warm
+              water to preserve their finish. Avoid using abrasive scrubbers, as they may scratch the surface. For
+              decorative pieces, dust them regularly with a soft, dry cloth. Do not expose ceramics to extreme
+              temperature changes to prevent cracking.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Returns and Refunds <span class="arrow-down"></span></button>
+          <div class="faq-answer">
+            <p>We accept returns within 30 days of delivery if the item is unused and in its original packaging. To
+              initiate a return, contact us at support@ceramicshop.com with your order number. We’ll provide a return
+              shipping label, though return shipping costs are the customer’s responsibility unless the item is
+              defective. Refunds are processed within 5-7 business days after we receive the returned item.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Custom Orders and Personalization <span class="arrow-down"></span></button>
+          <div class="faq-answer">
+            <p>We offer custom orders and personalization for many of our products! You can request specific colors,
+              designs, or engravings through our “Customize” page. Custom orders typically take 2-4 weeks to complete,
+              depending on the complexity. A 50% deposit is required upfront, with the remaining balance due upon
+              completion. Contact us for a quote!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Contact and Customer Support <span class="arrow-down"></span></button>
+          <div class="faq-answer">
+            <p>Our customer support team is here to help! You can reach us via email at support@ceramicshop.com or by
+              phone at (555) 123-4567, Monday through Friday, 9 AM to 5 PM EST. We also have a live chat feature on our
+              website for immediate assistance. For order inquiries, please have your order number ready.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-cta">
+    <div class="footer-cta-container">
+      <div class="footer-cta-image">
+        <img src="footer-cta.jpg" alt="">
+      </div>
+      <div class="footer-cta-text">
+        <h2>Uncover The World Of Ceramic Artistry Start Your Journey Here!</h2>
+        <a href="shop.html" class="footer-cta-btn">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>CeramicShop</h1>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="shop.html">SHOP</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+
+      <div class="footer-socials">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </div>
+
+    <div class="copyright-container">
+      <div class="copyright">
+        <p>Copyright © 2025</p>
+      </div>
+      <div class="rights">
+        <p>All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top">
+    <span class="chevron"></span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
